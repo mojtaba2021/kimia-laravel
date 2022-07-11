@@ -1,0 +1,241 @@
+.bg-header {
+    //background-color: #091B24 !important;
+    background: rgb(9, 27, 36);
+    background: linear-gradient(69deg, rgba(9, 27, 36, 1) 33%, rgba(24, 113, 157, 1) 100%);
+
+}
+
+.btn-product {
+    background-color: #5654C7 !important;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    display: none;
+}
+
+.card-slick {
+    width: 80%;
+}
+
+.slick-carousel {
+    width: 90%;
+    text-align: center !important;
+}
+
+.fix-edu-img {
+    max-height: 150px;
+}
+
+.post-line-height {
+    line-height: 30px !important;
+
+
+}
+
+@media (min-width: 576px) {
+    .slick-carousel {
+        width: 60%;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .top-circle {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        background-color: #5654C7;
+        z-index: 0;
+        opacity: 1 !important;
+        position: absolute;
+        top: 100px;
+        right: 330px;
+    }
+    .bottom-circle {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        background-color: #DAD8FF;
+        z-index: -1;
+        opacity: 1 !important;
+        position: absolute;
+        bottom: 100px;
+        left: 270px;
+    }
+    .half-circle {
+        border-bottom-left-radius: 100%; /* 100px of height + 10px of border */
+        border-bottom-right-radius: 100%; /* 100px of height + 10px of border */
+        border-top: 0;
+        background-image: linear-gradient(#ffff, #F5F7FD);
+        position: relative;
+        background-size: 100% auto;
+        height: 700px;
+        z-index: 1;
+        margin-bottom: 30px;
+    }
+}
+
+.radius-video {
+    border-radius: 10px;
+}
+
+.aparat-icon {
+    display: inline !important;
+    color: #5654C7;
+    width: 25px;
+    height: 25px;
+    filter: brightness(0) saturate(100%) invert(45%) sepia(68%) saturate(6406%) hue-rotate(234deg) brightness(104%) contrast(95%);
+}
+
+.slick-prev:before {
+    color: #bcbcbc;
+}
+
+.slick-next:before {
+    color: #bcbcbc;
+}
+
+.section-video a {
+    color: gray !important;
+}
+
+.home-hr-text {
+    margin: 40px auto;
+    line-height: 0em;
+    outline: 0;
+    border: 0;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.2rem;
+    align-items: center;
+    height: 1.5em;
+
+}
+
+.text-article-pharmacology {
+    color: #5654C7;
+}
+
+.text-article-medicine {
+    color: #16dba6;
+}
+
+.home-hr-text::before,
+.home-hr-text::after {
+    content: "";
+    display: block;
+    height: 1px;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    background: linear-gradient(to right, transparent, #818078, transparent);
+}
+
+.btn-article {
+    position: relative;
+    font-size: small;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 6em;
+    transition: all .2s;
+    border: none;
+    color: #F5F7FD;
+    background-color: #3A8D74;
+}
+
+.btn-article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.btn-article:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-article::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all .4s;
+}
+
+.btn-article::after {
+    background-color: #3A8D74;
+}
+
+.btn-article:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0;
+}
+
+.home-hr-text-green {
+
+    margin: 40px auto;
+    line-height: 0em;
+    outline: 0;
+    border: 0;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.2rem;
+    align-items: center;
+    height: 1.5em;
+
+}
+
+.home-hr-text-green::before,
+.home-hr-text-green::after {
+    content: "";
+    display: block;
+    height: 1px;
+    padding: 0 .5em;
+    line-height: 1.5em;
+    background: linear-gradient(to right, transparent, #3A8D74, transparent);
+}
+
+.social-list-default {
+    padding-inline-start: 0px !important;
+    padding: 5px 0 8px 0;
+}
+
+.footer-circle {
+    height: 110px;
+    width: 110px;
+    clip-path: circle(50.0% at 0 50%);
+    background-color: #DAD8FF;
+    z-index: -1;
+    opacity: 1 !important;
+    margin-top: 2%;
+    float: left;
+}
+
+// mobile version
+
+@media (max-width: 567px) {
+
+    .card-mobile-shadow {
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    }
+    .span-block {
+        display: block;
+    }
+}
+
+
+.img-zoom img {
+    transition: .5s;
+}
+
+.img-zoom a:hover img {
+    transform: scale(1.1);
+}

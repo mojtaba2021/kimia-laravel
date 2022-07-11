@@ -1,0 +1,133 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css";
+
+// Import Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// import slick carousel
+@import "../lib/slick/slick";
+@import "../lib/slick/slick-theme";
+@import "./home";
+@import "./video";
+@import "./contact-us";
+@import "./blog";
+
+//@font-face {
+//    font-family: "Vazir";
+//    src: url("../../fonts/Vazir.eot");
+//    /* IE9 Compat Modes */
+//    src: url("../../fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+//    url("../../fonts/Vazir.woff2") format("woff2"),
+//    url("../../fonts/Vazir.woff") format("woff"),
+//    url("../../fonts/Vazir.ttf") format("truetype");
+//    /* Safari, Android, iOS */
+//}
+@font-face {
+    font-family: "Yekan";
+    src: url("../fonts/Yekan.eot");
+    /* IE9 Compat Modes */
+    src: url("../fonts/Yekan.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Yekan.woff") format("woff"),
+    url("../fonts/Yekan.ttf") format("truetype");
+    /* Safari, Android, iOS */
+}
+
+body {
+    direction: rtl;
+    text-align: right !important;
+    font-family: "Yekan" !important;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.bg-navbar {
+    background-color: #2E3E77 !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+}
+.navbar-nav .searchbar {
+    position: relative;
+}
+
+/* Styling the search box where the
+    input would be given */
+.navbar-nav .searchbar input[type="text"] {
+    border: 0;
+    padding: 0;
+    width: 0px;
+    height: 35px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+}
+
+/* Styling the search bar icon */
+.navbar-nav .searchbar .icon {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 35px;
+    height: 100%;
+    background: none;
+    //border-radius: 3px;
+    color: #fff;
+    transition: all 0.5s 0.3s ease;
+}
+
+.navbar-nav .searchbar .icon i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    cursor: pointer;
+}
+
+.navbar-nav .searchbar .icon.active {
+    background: #2E3E77;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .searchbar input[type="text"].active {
+    width: 250px;
+    padding: 0 10px;
+    transition: all 0.5s 0.2s ease;
+}
+.navbar-nav .icon li {
+    list-style: none;
+    display: flex;
+}
+
+.navbar-nav .icon li a {
+    padding: 0 20px;
+}
+
+.navbar{
+    padding: 0 0 5px 0 !important;
+}
+
+
+.scroll-to-top {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    display: none;
+    width: 2.75rem;
+    height: 2.75rem;
+    text-align: center;
+    color: #fff;
+    background: rgba(90, 92, 105, 0.5);
+    line-height: 46px;
+    z-index: 1000;
+}
+.scroll-to-top:focus, .scroll-to-top:hover {
+    color: white;
+}
+.scroll-to-top:hover {
+    background: #5a5c69;
+}
+.scroll-to-top i {
+    font-weight: 800;
+}

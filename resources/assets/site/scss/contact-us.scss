@@ -1,0 +1,37 @@
+.bg-contact{
+    //background-color: #5654C7 !important;
+    background-color: #DAD8FF !important;
+    height: 300px;
+}
+.contact-icons {
+    width: 35px;
+    height: 35px;
+
+    margin: 0 auto;
+    filter: invert(100%) sepia(1%) saturate(7500%) hue-rotate(218deg) brightness(106%) contrast(104%);
+    padding: 5px;
+
+}
+
+.contact-span{
+    background-color: #51B899;
+    border-radius: 50%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+@media (min-width: 576px) {
+    .contact-list{
+
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+        bottom: -50px;
+
+    }
+    .contact-container{
+        position: relative;
+    }
+}
